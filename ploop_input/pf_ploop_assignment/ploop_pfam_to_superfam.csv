@@ -1,0 +1,230 @@
+n,pf_id,domain,syn,domain_name,superfamily
+,PF06431,Polyoma_lg_T_C,,Polyomavirus large T antigen C-terminus,AAA/SF3
+s,PF00004,AAA,,ATPase family associated with various cellular activities (AAA),AAA+
+s,PF13191,AAA_16,,AAA ATPase domain,AAA+
+s,PF13238,AAA_18,,AAA domain,AAA+
+s,PF13401,AAA_22,,AAA domain,AAA+
+s,PF12775,AAA_7,,P-loop containing dynein motor region,AAA+
+s,PF00308,Bac_DnaA,bac_dnaA; ,Bacterial dnaA  protein,AAA+
+s,PF06144,DNA_pol3_delta,,"DNA polymerase III, delta subunit",AAA+
+s,PF13177,DNA_pol3_delta2,,"DNA polymerase III, delta subunit",AAA+
+s,PF01695,IstB_IS21,IstB;,IstB-like ATP binding protein,AAA+
+s,PF06309,Torsin,,Torsin,AAA+
+,PF12846,AAA_10,,AAA-like domain,AAA+_put
+,PF13087,AAA_12,,AAA domain,AAA+_put
+,PF13166,AAA_13,,AAA domain,AAA+_put
+,PF13173,AAA_14,,AAA domain,AAA+_put
+,PF13175,AAA_15,,AAA ATPase domain,AAA+_put
+,PF13207,AAA_17,,AAA domain,AAA+_put
+,PF13245,AAA_19,,AAA domain,AAA+_put
+,PF07724,AAA_2,,AAA domain (Cdc48 subfamily),AAA+_put
+,PF13304,AAA_21,,"AAA domain, putative AbiEii toxin, Type IV TA system",AAA+_put
+,PF13479,AAA_24,,AAA domain,AAA+_put
+,PF13481,AAA_25,,AAA domain,AAA+_put
+,PF13514,AAA_27,,AAA domain,AAA+_put
+,PF13521,AAA_28,,AAA domain,AAA+_put
+,PF13555,AAA_29,,P-loop containing region of AAA domain,AAA+_put
+,PF07726,AAA_3,,ATPase family associated with various cellular activities (AAA),AAA+_put
+,PF13654,AAA_32,,AAA domain,AAA+_put
+,PF13872,AAA_34,,P-loop containing NTP hydrolase pore-1,AAA+_put
+,PF14516,AAA_35,,AAA-like domain,AAA+_put
+,PF07728,AAA_5,,AAA domain (dynein-related subfamily),AAA+
+,PF12774,AAA_6,,Hydrolytic ATP binding site of dynein motor region,AAA
+,PF12780,AAA_8,,P-loop containing dynein motor region D4,AAA
+,PF12781,AAA_9,,ATP-binding dynein motor region,AAA
+,PF08298,AAA_PrkA,,PrkA AAA domain,AAA+_put
+,PF09820,AAA-ATPase_like,,Predicted AAA-ATPase,AAA+_put
+,PF05783,DLIC,,Dynein light intermediate chain (DLIC),AAA+_put
+,PF03028,Dynein_heavy,,Dynein heavy chain region D6 P-loop domain ,AAA+_put
+,PF13871,Helicase_C_4,,C-terminal domain on Strawberry notch homologue,AAA+_put
+,PF13337,Lon_2,,Putative ATP-dependent Lon protease,AAA+_put
+,PF00493,MCM,,MCM P-loop domain,AAA+_put
+,PF01078,Mg_chelatase,,"Magnesium chelatase, subunit ChlI",AAA+_put
+,PF07034,ORC3_N,,Origin recognition complex (ORC) subunit 3 N-terminus,AAA+_put
+,PF05496,RuvB_N,,Holliday junction DNA helicase RuvB P-loop domain,AAA+_put
+,PF13476,AAA_23,,AAA domain,ABC_ATPases
+,PF09818,ABC_ATPase,,Predicted ATPase of the ABC class,ABC_ATPases
+,PF00005,ABC_tran,,ABC transporter,ABC_ATPases
+,PF12848,ABC_tran_Xtn,ABC_tran_2;,ABC transporter,ABC_ATPases
+,PF12399,BCA_ABC_TP_C,,Branched-chain amino acid ATP-binding cassette transporter,ABC_ATPases
+,PF14396,CFTR_R,,"Cystic fibrosis TM conductance regulator (CFTR), regulator domain",ABC_ATPases
+,PF04310,MukB,,MukB N-terminal,ABC_ATPases
+,PF00488,MutS_V,mutS;MutS_C;,MutS domain V,ABC_ATPases
+,PF13558,SbcCD_C,,"Putative exonuclease SbcCD, C subunit",ABC_ATPases
+,PF02463,SMC_N,,RecF/RecN/SMC N terminal domain,ABC_ATPases
+,PF02572,CobA_CobO_BtuR,,ATP:corrinoid adenosyltransferase BtuR/CobO/CobP,ASCE_unclassified
+,PF01935,DUF87,,"Helicase HerA, central domain",FtsK_HerA
+,PF01580,FtsK_SpoIIIE,,FtsK/SpoIIIE family,FtsK_HerA
+,PF02534,T4SS-DNA_transf,TRAG; TraG;,Type IV secretory system Conjugative DNA transfer,FtsK_HerA
+,PF03354,Terminase_1,Phage_terminase; ,Phage Terminase ,FtsK_HerA
+,PF04466,Terminase_3,G2P; ,Phage terminase large subunit,FtsK_HerA
+,PF03237,Terminase_6,DUF264; ,Terminase-like family,FtsK_HerA
+,PF05876,Terminase_GpA,,Phage terminase large subunit (GpA),FtsK_HerA
+,PF10412,TrwB_AAD_bind,,Type IV secretion-system coupling protein DNA-binding domain,FtsK_HerA
+,PF07693,KAP_NTPase,,KAP family P-loop domain,KAP_NTPases
+,PF13671,AAA_33,,AAA domain,Kinases
+,PF01591,6PF2K,,6-phosphofructo-2-kinase,Kinases
+,PF00406,ADK,adenylatekinase; ,Adenylate kinase,Kinases
+,PF01583,APS_kinase,,Adenylylsulphate kinase,Kinases
+,PF01121,CoaE,UPF0038;,Dephospho-CoA kinase,Kinases
+,PF02224,Cytidylate_kin,,Cytidylate kinase,Kinases
+,PF13189,Cytidylate_kin2,,Cytidylate kinase-like family,Kinases
+,PF01712,dNK,,Deoxynucleoside kinase,Kinases
+,PF06990,Gal-3-0_sulfotr,,Galactose-3-O-sulfotransferase ,Kinases
+,PF00625,Guanylate_kin,,Guanylate kinase,Kinases
+,PF00693,Herpes_TK,TK_herpes; ,Thymidine kinase from herpesvirus,Kinases
+,PF08433,KTI12,,Chromatin associated protein KTI12 ,Kinases
+,PF18748,Ploopntkinase1,,P-loop Nucleotide Kinase1,Kinases
+,PF18747,Ploopntkinase2,,P-loop Nucleotide Kinase2,Kinases
+,PF18751,Ploopntkinase3,,P-loop Nucleotide Kinase3,Kinases
+,PF00485,PRK,,Phosphoribulokinase / Uridine kinase family,Kinases
+,PF01202,SKI,,Shikimate kinase,Kinases
+,PF00685,Sulfotransfer_1,Sulfotransfer; ,Sulfotransferase domain,Kinases
+,PF03567,Sulfotransfer_2,Sulfotransfer2; ,Sulfotransferase family,Kinases
+,PF13469,Sulfotransfer_3,,Sulfotransferase family,Kinases
+,PF17784,Sulfotransfer_4,,Sulfotransferase domain,Kinases
+,PF09037,Sulphotransf,,Stf0 sulphotransferase,Kinases
+,PF02223,Thymidylate_kin,,Thymidylate kinase,Kinases
+,PF00265,TK,,Thymidine kinase,Kinases
+,PF08303,tRNA_lig_kinase,,tRNA ligase kinase domain,Kinases
+,PF07931,CPT,,Chloramphenicol phosphotransferase-like protein,Kinases
+,PF00437,T2SSE,GSPII_E; T2SE;,Type II/IV secretion system protein,PilT_VirB11
+,PF00006,ATP-synt_ab,,"ATP synthase alpha/beta family, nucleotide-binding domain",RecA_F1
+,PF06745,ATPase,KaiC;,KaiC,RecA_F1
+,PF03796,DnaB_C,,DnaB-like helicase C terminal domain,RecA_F1
+,PF11602,NTPase_P4,,ATPase P4 of dsRNA bacteriophage phi-12,RecA_F1
+,PF08423,Rad51,,Rad51,RecA_F1
+,PF00154,RecA,recA; ,recA bacterial DNA recombination protein,RecA_F1
+,PF13086,AAA_11,,AAA domain,SF1_SF2
+,PF13604,AAA_30,,AAA domain,SF1_SF2
+,PF00270,DEAD,,DEAD/DEAH box helicase,SF1_SF2
+,PF06733,DEAD_2,,DEAD_2,SF1_SF2
+,PF07652,Flavi_DEAD,,Flavivirus DEAD domain ,SF1_SF2
+,PF00271,Helicase_C,helicase_C; ,Helicase conserved C-terminal domain,SF1_SF2
+,PF13307,Helicase_C_2,,Helicase C-terminal domain,SF1_SF2
+,PF05127,Helicase_RecD,DUF699;,Helicase,SF1_SF2
+,PF02562,PhoH,,PhoH-like protein,SF1_SF2
+,PF05970,PIF1,DUF889;,PIF1-like helicase,SF1_SF2
+,PF07517,SecA_DEAD,,SecA DEAD-like domain,SF1_SF2
+,PF00176,SNF2_N,,SNF2 family N-terminal domain,SF1_SF2
+,PF18766,SWI2_SNF2,,SWI2/SNF2 ATPase,SF1_SF2
+,PF12344,UvrB,,Ultra-violet resistance protein B,SF1_SF2
+,PF13361,UvrD_C,,UvrD-like helicase C-terminal domain,SF1_SF2
+,PF13538,UvrD_C_2,,UvrD-like helicase C-terminal domain,SF1_SF2
+,PF00580,UvrD-helicase,,UvrD/REP helicase N-terminal domain,SF1_SF2
+,PF01443,Viral_helicase1,,Viral (Superfamily 1) RNA helicase,SF1_SF2
+,PF13500,AAA_26,,AAA domain,SIMIBI
+,PF13614,AAA_31,,AAA domain,SIMIBI
+,PF02374,ArsA_ATPase,,Anion-transporting ATPase,SIMIBI
+,PF01656,CbiA,CBIA;,CobQ/CobB/MinD/ParA nucleotide binding domain,SIMIBI
+,PF16575,CLP1_P,,mRNA cleavage and polyadenylation factor CLP1 P-loop,SIMIBI
+,PF02492,cobW,,"CobW/HypB/UreG, nucleotide-binding domain",SIMIBI
+,PF00142,Fer4_NifH,fer4_NifH; ,"4Fe-4S iron sulfur cluster binding proteins, NifH/frxC family",SIMIBI
+,PF03308,MeaB,ArgK;,Methylmalonyl Co-A mutase-associated GTPase MeaB,SIMIBI
+,PF09140,MipZ,,ATPase MipZ,SIMIBI
+,PF10609,ParA,,NUBPL iron-transfer P-loop NTPase,SIMIBI
+,PF00448,SRP54,,"SRP54-type protein, GTPase domain",SIMIBI
+,PF09439,SRPRB,,Signal recognition particle receptor beta subunit,SIMIBI
+,PF03029,ATP_bind_1,ATP-bind; ,Conserved hypothetical ATP binding protein,SIMIBI
+,PF05729,NACHT,,NACHT domain,STAND
+,PF00931,NB-ARC,,NB-ARC domain,STAND
+,PF04548,AIG1,,AIG1 family,TRAFAC
+,PF00025,Arf,arf;,ADP-ribosylation factor family,TRAFAC
+,PF00350,Dynamin_N,dynamin; ,Dynamin family,TRAFAC
+,PF02421,FeoB_N,FeoB; ,Ferrous iron transport protein B,TRAFAC
+,PF00503,G-alpha,,G-protein alpha subunit,TRAFAC
+,PF02263,GBP,,"Guanylate-binding protein, N-terminal domain",TRAFAC
+,PF00009,GTP_EFTU,,Elongation factor Tu GTP binding domain,TRAFAC
+,PF04670,Gtr1_RagA,,Gtr1/RagA G protein conserved region,TRAFAC
+,PF05049,IIGP,,Interferon-inducible GTPase (IIGP),TRAFAC
+,PF00225,Kinesin,kinesin; ,Kinesin motor domain,TRAFAC
+,PF01926,MMR_HSR1,,50S ribosome-binding GTPase,TRAFAC
+,PF00063,Myosin_head,myosin_head; ,Myosin head (motor domain),TRAFAC
+,PF00071,Ras,ras; ,Ras family,TRAFAC
+,PF08477,Roc,Miro;,"Ras of Complex, Roc, domain of DAPkinase",TRAFAC
+,PF00735,Septin,GTP_CDC; ,Septin,TRAFAC
+,PF02283,CobU,COBU; ,Cobinamide kinase / cobinamide phosphate guanyltransferase,Unassigned P-loop
+,PF02456,Adeno_IVa2,,Adenovirus IVa2 protein,Unassigned P-loop
+,PF00709,Adenylsucc_synt,,Adenylosuccinate synthetase,Unassigned P-loop
+,PF03969,AFG1_ATPase,,AFG1-like ATPase,Unassigned P-loop
+,PF03668,ATP_bind_2,UPF0042; ATP_bind2; ,P-loop ATPase protein family,Unassigned P-loop
+,PF01637,ATPase_2,Archaeal_ATPase; Arch_ATPase;,ATPase domain predominantly from Archaea,Unassigned P-loop
+,PF10996,Beta-Casp,,Beta-Casp domain,Unassigned P-loop
+,PF09711,Cas_Csn2,,CRISPR-associated protein (Cas_Csn2),Unassigned P-loop
+,PF16813,Cas_St_Csn2,,CRISPR-associated protein Csn2 subfamily St,Unassigned P-loop
+,PF06564,CBP_BcsQ,YhjQ;,Cellulose biosynthesis protein BcsQ,Unassigned P-loop
+,PF05179,CDC73_C,Cdc73; CDC73;,"RNA pol II accessory factor, Cdc73 family, C-terminal",Unassigned P-loop
+,PF11111,CENP-M,,Centromere protein M (CENP-M),Unassigned P-loop
+,PF14617,CMS1,,U3-containing 90S pre-ribosomal complex subunit,Unassigned P-loop
+,PF16834,CSM2,,"Shu complex component Csm2, DNA-binding",Unassigned P-loop
+,PF06418,CTP_synth_N,,CTP synthase N-terminus,Unassigned P-loop
+,PF10236,DAP3,,Mitochondrial ribosomal death-associated protein 3,Unassigned P-loop
+,PF13892,DBINO,,DNA-binding domain,Unassigned P-loop
+,PF02499,DNA_pack_C,,"Probable DNA packing protein, C-terminus",Unassigned P-loop
+,PF02500,DNA_pack_N,,"Probable DNA packing protein, N-terminus ",Unassigned P-loop
+,PF07755,DUF1611,,Domain of unknown function (DUF1611_C) P-loop domain,Unassigned P-loop
+,PF08351,DUF1726,,Domain of unknown function (DUF1726),Unassigned P-loop
+,PF09848,DUF2075,,Uncharacterized conserved protein (DUF2075),Unassigned P-loop
+,PF10088,DUF2326,,Uncharacterised protein conserved in bacteria (DUF2326),Unassigned P-loop
+,PF10649,DUF2478,,Protein of unknown function (DUF2478),Unassigned P-loop
+,PF03192,DUF257,,"Pyrococcus protein of unknown function, DUF257",Unassigned P-loop
+,PF10923,DUF2791,,P-loop Domain of unknown function (DUF2791),Unassigned P-loop
+,PF11398,DUF2813,,Protein of unknown function (DUF2813),Unassigned P-loop
+,PF12128,DUF3584,,Protein of unknown function (DUF3584),Unassigned P-loop
+,PF04317,DUF463,,"YcjX-like family, DUF463",Unassigned P-loop
+,PF05673,DUF815,,Protein of unknown function (DUF815),Unassigned P-loop
+,PF05872,DUF853,,Bacterial protein of unknown function (DUF853),Unassigned P-loop
+,PF06048,DUF927,,Domain of unknown function (DUF927),Unassigned P-loop
+,PF10483,Elong_Iki1,Hap2_elong;,Elongator subunit Iki1,Unassigned P-loop
+,PF09807,ELP6,DUF2348;,Elongation complex protein 6,Unassigned P-loop
+,PF16203,ERCC3_RAD25_C,,ERCC3/RAD25/XPB C-terminal helicase,Unassigned P-loop
+,PF04257,Exonuc_V_gamma,,"Exodeoxyribonuclease V, gamma subunit ",Unassigned P-loop
+,PF01268,FTHFS,,Formate--tetrahydrofolate ligase,Unassigned P-loop
+,PF02841,GBP_C,,"Guanylate-binding protein, C-terminal domain",Unassigned P-loop
+,PF07088,GvpD,,GvpD gas vesicle protein,Unassigned P-loop
+,PF11496,HDA2-3,,Class II histone deacetylase complex subunits 2 and 3,Unassigned P-loop
+,PF02689,Herpes_Helicase,,Helicase,Unassigned P-loop
+,PF02399,Herpes_ori_bp,,Origin of replication binding protein,Unassigned P-loop
+,PF07529,HSA,,HSA,Unassigned P-loop
+,PF18128,HydF_dimer,,Hydrogen maturase F dimerization domain,Unassigned P-loop
+,PF18133,HydF_tetramer,,Hydrogen maturase F tetramerization domain,Unassigned P-loop
+,PF17213,Hydin_ADK,,Hydin Adenylate kinase-like domain,Unassigned P-loop
+,PF01715,IPPT,,IPP transferase,Unassigned P-loop
+,PF01745,IPT,,Isopentenyl transferase,Unassigned P-loop
+,PF02702,KdpD,,Osmosensitive K+ channel His kinase sensor domain,Unassigned P-loop
+,PF03618,Kinase-PPPase,DUF299;,Kinase/pyrophosphorylase,Unassigned P-loop
+,PF05609,LAP1C,,Lamina-associated polypeptide 1C (LAP1C),Unassigned P-loop
+,PF02606,LpxK,,Tetraacyldisaccharide-1-P 4'-kinase,Unassigned P-loop
+,PF14417,MEDS,,"MEDS: MEthanogen/methylotroph, DcmR Sensory domain",Unassigned P-loop
+,PF16796,Microtub_bd,,Microtubule binding,Unassigned P-loop
+,PF08438,MMR_HSR1_C,,GTPase of unknown function C-terminal,Unassigned P-loop
+,PF03205,MobB,,Molybdopterin guanine dinucleotide synthesis protein B,Unassigned P-loop
+,PF06858,NOG1,,Nucleolar GTP-binding protein 1 (NOG1),TRAFAC
+,PF03266,NTPase_1,DUF265;,NTPase,Unassigned P-loop
+,PF01057,Parvo_NS1,,Parvovirus non-structural protein NS1,Unassigned P-loop
+,PF05625,PAXNEB,,PAXNEB protein,Unassigned P-loop
+,PF10662,PduV-EutP,,Ethanolamine utilisation - propanediol utilisation,Unassigned P-loop
+,PF05894,Podovirus_Gp16,,Podovirus DNA encapsidation protein (Gp16),Unassigned P-loop
+,PF04665,Pox_A32,,Poxvirus A32 protein,Unassigned P-loop
+,PF03976,PPK2,DUF344; ,Polyphosphate kinase 2 (PPK2),Unassigned P-loop
+,PF00519,PPV_E1_C,E1; ,Papillomavirus helicase,Unassigned P-loop
+,PF16836,PSY3,,"Shu complex component Psy3, DNA-binding description",Unassigned P-loop
+,PF03215,Rad17,,Rad17 P-loop domain,Unassigned P-loop
+,PF04851,ResIII,,"Type III restriction enzyme, res subunit",SF1_SF2
+,PF05879,RHD3,,Root hair defective 3 GTP-binding protein (RHD3),TRAFAC
+,PF07999,RHSP,,Retrotransposon hot spot protein,Unassigned P-loop
+,PF00910,RNA_helicase,,RNA helicase,Unassigned P-loop
+,PF10443,RNA12,,RNA12 protein,Unassigned P-loop
+,PF03193,RsgA_GTPase,DUF258;,RsgA GTPase,TRAFAC
+,PF14532,Sigma54_activ_2,,Sigma-54 interaction domain,Unassigned P-loop
+,PF00158,Sigma54_activat,sigma54;,Sigma-54 interaction domain,Unassigned P-loop
+,PF09547,Spore_IV_A,spore_IV_A; ,Stage IV sporulation protein A (spore_IV_A),Unassigned P-loop
+,PF03846,SulA,,Cell division inhibitor SulA,Unassigned P-loop
+,PF06068,TIP49,,TIP49 P-loop domain,Unassigned P-loop
+,PF05621,TniB,,Bacterial TniB protein,Unassigned P-loop
+,PF12696,TraG-D_C,,TraM recognition site of TraD and TraG,Unassigned P-loop
+,PF02367,TsaE,UPF0079;,Threonylcarbamoyl adenosine biosynthesis protein TsaE,Unassigned P-loop
+,PF07015,VirC1,,VirC1 protein,Unassigned P-loop
+,PF05272,VirE,,Virulence-associated protein E,Unassigned P-loop
+,PF06414,Zeta_toxin,,Zeta toxin,Unassigned P-loop
+,PF05707,Zot,,Zonular occludens toxin (Zot),Unassigned P-loop
