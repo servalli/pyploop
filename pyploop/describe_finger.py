@@ -9,14 +9,14 @@ def assign_arg_type(dists, d_sites_checked="",strong=3.2,weak=4):
 
     Args:
         dists (Pandas DataFrame): distances dataframe
-        d_sites_checked (optional): Table w. Defaults to "".
-        strong (float, optional): _description_. Defaults to 3.2.
-        weak (int, optional): _description_. Defaults to 4.
+        d_sites_checked (optional): Table with binding sites previously checked.
+        strong (float): strong H-bond distance treashold. Defaults to 3.2.
+        weak (float): Weak H-bond distance treashold. Defaults to 4.
     """    
     distance_columns=[col for col in dists.columns if "dist" in col and col!="WBD-SerK+1_dist"]
     for col in distance_columns:
         dists[col]=dists[col].astype(float)
-    #notype=(dists["TYPE_ARG"].isna())&(dists["include"].isna())
+    
 
     dists.loc[(((dists["nh2-gamma-dist"]<weak)&(dists["nh1-alpha-dist"]<weak))|((dists["nh1-gamma-dist"]<weak)&(dists["nh2-alpha-dist"]<weak))),"TYPE_ARG"]="FORK."
     dists.loc[(dists["nh1-gamma-dist"]<weak)&(dists["nh1-alpha-dist"]<weak),"TYPE_ARG"]="NH1 weak."
@@ -34,6 +34,13 @@ def assign_arg_type(dists, d_sites_checked="",strong=3.2,weak=4):
 
 
 def assign_mono_type(dists, strong=3.2,weak=4):
+    """Assign interaction type to main Lys and Asn (closest to beta-phosphate) in each site
+
+    Args:
+        dists (Pandas DataFrame): distances dataframe
+        strong (float): strong H-bond distance treashold. Defaults to 3.2.
+        weak (float): Weak H-bond distance treashold. Defaults to 4.
+    """
     dists.loc[(dists["nz-gamma-dist"]<weak),"LYS-site"]="G"
     dists.loc[(dists["nz-gamma-dist"]<weak)&(dists["nz-alpha-dist"]<weak),"LYS-site"]="AG"
 
@@ -48,7 +55,12 @@ def assign_mono_type(dists, strong=3.2,weak=4):
 
 
 def assign_type(dists):   
+    """Assign general type of stimulator interaction based on fields for main Arg, Lys, Asn
+    and additional interacting positively charged residues
 
+    Args:
+        dists (Pandas DataFrame): distance dataframe
+    """
     
     dists.loc[dists["LYS-site"]=="AG","AG-site"]="LYS"
     dists.loc[dists.TYPE_ARG.str.contains("NH"),"AG-site"]="ARG"
