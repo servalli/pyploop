@@ -1,24 +1,11 @@
-"""
+#!/usr/bin/env python
+__doc__ = """
 Module for evaluation of binding sites of P-loop NTPases, see references [XXX] and [YYY] .
-This file coontains functions for PDB processing"""
+This file coontains functions for processing of an individual binding site.
+More at https://github.com/servalli/pyploop."""
 
-
-import os
 import operator
-import pandas as pd
-from Bio.PDB import PDBList
-import pandas as pd
-import time
-import re
-import pandas as pd
-from itertools import product
-import os
-import numpy as np
-import Bio.PDB as PDB
-from Bio.PDB import PDBList, MMCIFParser, Select, Selection, PDBIO, NeighborSearch
-from Bio.PDB.MMCIF2Dict import MMCIF2Dict
-
-
+from Bio.PDB import NeighborSearch
 
 def get_oneletter(three):
     aa_dict={
@@ -47,10 +34,6 @@ def get_oneletter(three):
     }
     return aa_dict[three]
 
-
-
-
-
 def get_gamma(s, nc, gamma_types=""):
     beta=["O1B","O2B","O3B","N3B","C3B"]
     alpha=["O1A","O2A","O3A"] 
@@ -77,8 +60,7 @@ def get_gamma(s, nc, gamma_types=""):
     else:
         return 1
 
-
-def get_WB_Asp(ch,lys_id,nxt, mg_at,all_term_acid, check_hydro=False,distance_thres=5): 
+def get_WB_Asp(ch,lys_id,nxt, mg_at,all_term_acid, check_hydro=True,distance_thres=5, recursed=False): 
     #Find Walker B Asp and evaluate Mg binding
     not_allowed=['E', 'D', 'S', 'T', 'Y', 'K', 'R', 'H']
     
@@ -125,7 +107,15 @@ def get_WB_Asp(ch,lys_id,nxt, mg_at,all_term_acid, check_hydro=False,distance_th
                 WB_to_mg="NO_MG" 
         #print (preceding,dist, WB_found)       
     if not WB_found:
-        WB_Asp_info, WB_to_mg, WB_Asp_dist = "NOT_FOUND", "", ""
+        #If we ran out of Asp residues in 5A radius, but could not find WB-Asp, we might be dealing with a protein
+        # with a polar substitution in hhhhD/E, such as many Ras-like proteins. We try to rerun search without hydro check:
+        if not recursed:
+            WB_Asp_info, WB_Asp_dist, ser_to_mg, WB_to_mg, hydro, preceding=get_WB_Asp(ch,lys_id,nxt, mg_at,all_term_acid, check_hydro=False, recursed=True)
+        #If we still couldnt find anything, give up and annouce there is no acidic residue around. Probably, open catalytic site.
+            if type(WB_Asp_dist)==str:
+                WB_Asp_info, WB_to_mg, WB_Asp_dist = "NOT_FOUND", "", ""
+        else:
+            WB_Asp_info, WB_to_mg, WB_Asp_dist = "NOT_FOUND", "", ""        
         if mg_at!="NONE":        
             ser_to_mg=ser_atom-mg_at
         else:
@@ -210,7 +200,8 @@ def calc_ag_distances(residue,atom_name, alpha_atoms,gamma_atoms):
 
         return alpha_atom.get_name(),alpha_dist,gamma_atom.get_name(),gamma_dist
     else: return "","","",""
-    
+    #else:
+    #    print(residue, gamma_atoms)
     
 
 def list_all_Ns(gamma_atoms, distlimit, excluded_sidechain, excluded_backbone):

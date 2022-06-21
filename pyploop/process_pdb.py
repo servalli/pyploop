@@ -1,30 +1,41 @@
-
-"""
+#!/usr/bin/env python
+__doc__ ="""
 Module for evaluation of binding sites of P-loop NTPases, see references [XXX] and [YYY] .
-This file coontains functions for PDB processing"""
+This file coontains functions for PDB processing.
+More at https://github.com/servalli/pyploop."""
+
 
 
 import os
-import operator
 import pandas as pd
 from Bio.PDB import PDBList
 import pandas as pd
 import time
-import re
 import pandas as pd
-from itertools import product
 import os
-import numpy as np
-import Bio.PDB as PDB
-from Bio.PDB import PDBList, MMCIFParser, Select, Selection, PDBIO, NeighborSearch
+from Bio.PDB import PDBList, MMCIFParser
 from Bio.PDB.MMCIF2Dict import MMCIF2Dict
+
+from pyploop.process_nucleotide import process_nucleotides
+
 
 
 def download_pdbs(compound_pdb, ploop_wdir, pdb_dir, log_dir):
-    '''
+    
+    
+    """
     Download PDBs for P-loop NTPases containing each type of NTP-analog 
     and save those in separate folders inside the working directory.
-    '''
+
+    Args:
+        compound_pdb (dict): Dictionary with structures assigned to compounds, ex: {'ATP': ['1A82']}
+        ploop_wdir (str): Work directory location
+        pdb_dir (str): Subdirectory where to save PDBs
+        log_dir (str): Subdirectory where to save log
+
+    Returns:
+        Pandas dataframe with structures downloaded
+    """    
     pdbl = PDBList(verbose=False)
 
     log_p=os.path.join(ploop_wdir,log_dir,"PDB_retrieval.txt")
@@ -52,7 +63,19 @@ def download_pdbs(compound_pdb, ploop_wdir, pdb_dir, log_dir):
     return downloaded
 
 
+
+
 def get_terminals(s,atom,rtype):
+    """Retrieve terminals of residues of a specific type
+
+    Args:
+        s (_type_): _description_
+        atom (str): atom name, i.e. "NZ" for Lys
+        rtype (_type_): _description_
+
+    Returns:
+        _type_: _description_
+    """    
     
     all_term_Ns=[re[atom] for re in s.get_residues() if re.resname==rtype and re.has_id(atom) ]
     return all_term_Ns
@@ -92,8 +115,23 @@ def get_structinfo(path):
     
     return method, resolution, p_name, pdb_date, has_water
 
-def process_pdb_dir(p_dir,comps, comps_F, alpha, beta, gamma_F, gamma_N, gamma_types):
-    #gia_pdb={comp:(sorted([w for w in os.listdir(os.path.join(p_dir,"PDB"+comp,"full")) if w[3:7] in pdbs]) if os.path.isdir(os.path.join(p_dir,"PDB"+comp,"full")) else []) for comp in comps}
+def process_pdb_dir(p_dir,comps, comps_F, alpha, beta, gamma_F, gamma_N, gamma_types,ploop_all_chains):
+    """_summary_
+
+    Args:
+        p_dir (str): Folder with PDBs
+        comps (list): compound types list
+        comps_F (_type_): compound types for which to look for gamma-phosphate mimic
+        alpha (list): _description_
+        beta (list): _description_
+        gamma_F (list): _description_
+        gamma_N (list): _description_
+        gamma_types (list): gamma mimic compounds
+        ploop_all_chains (DataFrame): Interpro mapping (IPR027417)
+
+    Returns:
+        _type_: _description_
+    """    
     gia_pdb={comp:(sorted([w for w in os.listdir(os.path.join(p_dir,"PDB"+comp,"full")) if w.endswith(".cif")]) if os.path.isdir(os.path.join(p_dir,"PDB"+comp,"full")) else []) for comp in comps}       
     #Dict with structure filenames
     
@@ -161,7 +199,7 @@ def process_pdb_dir(p_dir,comps, comps_F, alpha, beta, gamma_F, gamma_N, gamma_t
 
             method, resolution, p_name, pdb_date, has_water=get_structinfo(path)
             if type(resolution)==float:
-                if resolution>5:
+                if resolution>5:   #Skip low-res structures alltogether
                     continue
             ###
             
