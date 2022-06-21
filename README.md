@@ -1,2 +1,3 @@
 # pyploop
-Distance measurements in active sites of P-loop NTPases
+Batch distance measurements in active sites of P-loop NTPases,
+see Analysis_pipeline.ipynb
