@@ -74,11 +74,10 @@ def assign_type(dists):
     g_main_r_g=dists.TYPE_ARG.str.contains("GAMMA")
     
 
-    
-    n_lys_g=dists["Surr_N_SCh"].str.count("LYS")+g_main_k_g.astype(int)   
-    
     n_arg_g=dists["Surr_N_SCh"].str.count("ARG")+g_main_r_g.astype(int)
     
+    n_lys_g=dists["Surr_N_SCh"].str.count("LYS")+g_main_k_g.astype(int)      
+     
     comma=(np.sign(n_arg_g)*np.sign(n_lys_g))*(n_lys_g.astype(str).str.slice(0,0)+", ")
     y=(n_arg_g.astype(str)+"ARG")*np.sign(n_arg_g)+comma+(n_lys_g.astype(str)+"LYS")*np.sign(n_lys_g)
     

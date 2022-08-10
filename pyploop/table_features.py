@@ -8,7 +8,7 @@ More at https://github.com/servalli/pyploop."""
 import re
 
 import pandas as pd
-
+import numpy as np
 
 def mark_repeated_nmr(dists):
     """Mark repeated NMR models .
@@ -60,10 +60,10 @@ def assign_uniprot(dists,pdb,chain,row, d_up_mapping,d_up_info, indexr):
         uniprot_id, Walker A Lys id
     """    
     ids_m=d_up_mapping.loc[(d_up_mapping['PDB']==pdb)&(d_up_mapping['CHAIN']==chain)]
-    if not pd.isnull(chain):
+    if not pd.isnull(chain) and not type(row["gly13-id"]==str):
         ploop_n=row["gly13-id"]+3
     else:
-        ploop_n=pd.nan
+        ploop_n=np.nan
     upid="None"    
     if ids_m.shape[0]>0: 
         if ids_m.shape[0]>1 : #If several ids are mapped to this chain and ploop  region is known, get the right id
